@@ -1,9 +1,9 @@
 import random
-from typing import List
+from typing import List, Union
 
 
 class Teammate:
-    def __init__(self, name, requests: List[str]):
+    def __init__(self, name, requests: List[Union[str, int]]):
         self.name, self.requests = name, requests
 
     def __repr__(self):
